@@ -14,7 +14,10 @@ module "vpc" {
 //Subnetwork
 
 module "subnetwork"{
-    source = module.subnetwork
+    source = "./modules/subnetwork"
+    subnetname = var.subnetname
+    ip_cidr_range = var.ip_cidr_range
+    region = var.region
 }
 
 //VM instance
