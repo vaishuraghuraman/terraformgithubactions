@@ -14,5 +14,11 @@ variable "image" {
     description = "image of the VM"
 }
 
+variable "vpcname"{
+    description = "vpc name"
+}
 
+variable "subname"{
+    description = "subnet name"
+}
 

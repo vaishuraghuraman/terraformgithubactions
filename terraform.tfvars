@@ -8,3 +8,4 @@ vpcname = "vpc1"
 subnetname = "subnet1"
 ip_cidr_range = "10.2.0.0/16"
 firewallname = "firewall1"
+

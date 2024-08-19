@@ -15,6 +15,7 @@ module "vpc1" {
 
 module "subnetwork1"{
     source = "./modules/subnetwork1"
+    vpcname = module.vpc1.google_compute_vpcname
     subnetname = var.subnetname
     ip_cidr_range = var.ip_cidr_range
     region = var.region
@@ -28,6 +29,8 @@ module "vminstance1"{
     machine_type = var.machine_type
     zone = var.zone
     image = var.image
+    vpcname = module.vpc1.google_compute_vpcname
+    subname = module.subnetwork1.google_compute_subnetwork_subname
 
 }
 
@@ -38,6 +41,7 @@ module "vminstance1"{
 module "firewall1"{
     source = "./modules/firewall1"
     firewallname =  var.firewallname
+    vpcname = module.vpc1.google_compute_vpcname
 }
 
 

@@ -8,3 +8,7 @@ variable "ip_cidr_range" {
 variable "region" {
     description = "region"
 }
+
+variable "vpcname"{
+    description = "vpcname"
+}
