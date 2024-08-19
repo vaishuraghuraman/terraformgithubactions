@@ -18,8 +18,8 @@ resource "google_compute_instance" "vm1" {
   }
  
   network_interface {
-    network = modules.vpc
-    subnetwork = modules.subnetwork
+    network = modules.vpc.name
+    subnetwork = modules.subnetwork.name
     access_config {
       // Ephemeral public IP
     }
