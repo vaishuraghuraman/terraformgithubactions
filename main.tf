@@ -6,15 +6,15 @@ provider "google" {
 
 //VPC
 
-module "vpc" {
-    source = "./modules/vpc"
+module "vpc1" {
+    source = "./modules/vpc1"
     vpcname = var.vpcname
 }
 
 //Subnetwork
 
-module "subnetwork"{
-    source = "./modules/subnetwork"
+module "subnetwork1"{
+    source = "./modules/subnetwork1"
     subnetname = var.subnetname
     ip_cidr_range = var.ip_cidr_range
     region = var.region
@@ -22,8 +22,8 @@ module "subnetwork"{
 
 //VM instance
 
-module "vminstance"{
-    source = "./modules/vminstance"
+module "vminstance1"{
+    source = "./modules/vminstance1"
     name = var.vmname
     machine_type = var.machine_type
     zone = var.zone
@@ -35,8 +35,8 @@ module "vminstance"{
 
 //FIREWALL
 
-module "firewall"{
-    source = "./modules/firewall"
+module "firewall1"{
+    source = "./modules/firewall1"
     firewallname =  var.firewallname
 }
 
