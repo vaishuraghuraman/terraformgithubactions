@@ -1,4 +1,4 @@
-project_id = "qwiklabs-gcp-01-5327396dd8cd"
+project_id = "qwiklabs-gcp-02-16ccb60e1c3e"
 vmname = "vminstance1"
 machine_type = "n2-standard-2"
 region = "us-central1"
