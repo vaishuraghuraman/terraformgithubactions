@@ -1,6 +1,6 @@
 resource "google_compute_firewall" "firewall" {
   name    = var.firewallname
-  network = ["${ modules.vpc.name}"]
+  network = modules.vpc.google_compute_network_name
   allow {
     protocol = "icmp"
   }
