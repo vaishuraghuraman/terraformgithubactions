@@ -44,7 +44,7 @@ module "firewall1"{
     vpcname = module.vpc1.google_compute_vpcname
 }
 
-module "bqdatset" {
+module "bqdataset1" {
     source = "./modules/bqdataset"
     friendly_name = var.friendly_name
     location = var.location
