@@ -55,7 +55,7 @@ module "bqdatset" {
 
 module "table" {
     source = "./modules/table"
-    bqname = module.bqdataset.google_bigquery_dataset_bqname
+    bqname = module.bqdataset1.google_bigquery_dataset_bqname
     table_id = var.table_id
     type = var.type
 }
