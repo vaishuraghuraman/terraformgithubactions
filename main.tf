@@ -44,9 +44,21 @@ module "firewall1"{
     vpcname = module.vpc1.google_compute_vpcname
 }
 
+module "bqdatset" {
+    source = "./modules/bqdataset"
+    friendly_name = var.friendly_name
+    location = var.location
+    bqname = var.bqname
+    default_table_expiration_ms = var.default_table_expiration_ms
+}
 
 
-
+module "table" {
+    source = "./modules/table"
+    bqname = module.bqdataset.google_bigquery_dataset_bqname
+    table_id = var.table_id
+    type = var.type
+}
 
 
 

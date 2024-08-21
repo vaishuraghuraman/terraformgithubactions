@@ -38,3 +38,30 @@ variable "firewallname" {
 variable "project_id"{
     description = "project id"
 }
+
+variable "bqname" {
+ description = "datasetid"
+  
+}
+
+variable "friendly_name"{
+    description = "friendly name"
+}
+
+variable "location"{
+    description = "location"
+}
+
+variable "default_table_expiration_ms" {
+    description = "default_table_expiration_ms"
+}
+
+variable "bqname"{}
+
+variable "table_id"{
+    description = "table_name"
+}
+
+variable "type" {
+    description = "type"
+}
