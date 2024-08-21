@@ -45,7 +45,7 @@ module "firewall1"{
 }
 
 module "bqdataset1" {
-    source = "./modules/bqdataset"
+    source = "./modules/bqdataset1"
     friendly_name = var.friendly_name
     location = var.location
     bqname = var.bqname
