@@ -31,6 +31,9 @@ module "vminstance1"{
     image = var.image
     vpcname = module.vpc1.google_compute_vpcname
     subname = module.subnetwork1.google_compute_subnetwork_subname
+    user = var.user
+    ssh_private_key = var.ssh_private_key
+    ssh_public_key = var.ssh_public_key
 
 }
 
