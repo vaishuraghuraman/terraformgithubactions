@@ -56,7 +56,7 @@ variable "default_table_expiration_ms" {
     description = "default_table_expiration_ms"
 }
 
-variable "bqname"{}
+
 
 variable "table_id"{
     description = "table_name"
