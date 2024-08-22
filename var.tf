@@ -70,10 +70,10 @@ variable "user"{
     description = "user "
 }
 
-variable "ssh_public_key"{
-    description  = "public key"
-}
+//variable "ssh_public_key"{
+  //  description  = "public key"
+//}
 
-variable "ssh_private_key" {
-    description = "private key"
-}
+//variable "ssh_private_key" {
+  //  description = "private key"
+//}
