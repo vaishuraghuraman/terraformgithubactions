@@ -34,19 +34,19 @@ resource "google_compute_instance" "vm1" {
 
   metadata_startup_script = "echo hi > /test.txt"
 
-connection {
-    type     = "ssh"
-    user     = "root"
-    password = var.root_password
-    host     = self.public_ip
-  }
+//connection {
+  //  type     = "ssh"
+    //user     = "root"
+   // password = var.root_password
+   // host     = self.public_ip
+ // }
 
-  provisioner "remote-exec" {
-    inline = [
-      "echo 'Hello world' ",
-      "sudo apt update -y",
-    ]
-  }
+  //provisioner "remote-exec" {
+    //inline = [
+    //  "echo 'Hello world' ",
+      //"sudo apt update -y",
+    //]
+  //}
   
 }
 
