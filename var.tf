@@ -66,9 +66,9 @@ variable "type" {
     description = "type"
 }
 
-variable "user"{
-    description = "user "
-}
+//variable "user"{
+  //  description = "user "
+//}
 
 //variable "ssh_public_key"{
   //  description  = "public key"
